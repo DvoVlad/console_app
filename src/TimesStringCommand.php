@@ -26,11 +26,12 @@ class TimesStringCommand extends Command
    }
 
    protected function execute(InputInterface $input, OutputInterface $output)
-   {	$text = $input->getArgument('string');
-		for($i = 0;$i < $input->getOption('t');$i++){
-				$output->writeln($text);
-		}
-		return 0; 
+   {
+	$text = $input->getArgument('string');
+	for($i = 0;$i < $input->getOption('t');$i++){
+		$output->writeln($text);
+	}
+	return 0; 
    }
 }
 
