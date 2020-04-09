@@ -19,9 +19,10 @@ class SayHellowCommand extends Command
    }
 
    protected function execute(InputInterface $input, OutputInterface $output)
-   {	$text = $input->getArgument('string');
-		$output->writeln('Привет ' . $text);
-		return 0; 
+   {	
+	$text = $input->getArgument('string');
+	$output->writeln('Привет ' . $text);
+	return 0; 
    }
 }
 
