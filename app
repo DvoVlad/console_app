@@ -6,6 +6,7 @@ $app = new \Symfony\Component\Console\Application('demo application');
 
 
 $app->add(new \App\SayHellowCommand());
+$app->add(new \App\TimesStringCommand());
 
 $app->run();
 
