@@ -1,0 +1,19 @@
+{
+    "name": "vlad/app",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DvoVlad",
+            "email": "dvovlad@mail.ru"
+        }
+    ],
+    "require": {
+        "symfony/console": "^5.0",
+        "nesbot/carbon": "^2.32"
+    },
+   "autoload": {
+       "psr-4": {
+           "App\\": ["src"]
+       }
+   }
+}
