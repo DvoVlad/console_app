@@ -12,7 +12,7 @@ class TimesStringCommand extends Command
 {
    protected function configure()
    {
-       $this
+       	$this
            ->setName('times_string')
            ->setDescription('convert string into new format')
            ->addArgument('string', InputArgument::REQUIRED, 'The string')
@@ -22,7 +22,7 @@ class TimesStringCommand extends Command
 			InputOption::VALUE_OPTIONAL,
 			'количество повторов строки',
 			2
-			);
+	);
    }
 
    protected function execute(InputInterface $input, OutputInterface $output)
